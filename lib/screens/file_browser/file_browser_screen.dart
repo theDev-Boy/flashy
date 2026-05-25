@@ -586,7 +586,7 @@ class _FileBrowserScreenState extends ConsumerState<FileBrowserScreen> {
 
   Future<void> _pickAndUploadFiles() async {
     try {
-      final result = await FilePicker.platform.pickFiles(allowMultiple: true);
+      final result = await FilePicker.pickFiles(allowMultiple: true);
       if (result == null || result.files.isEmpty || !mounted) return;
       for (final file in result.files) {
         if (file.path != null) {
@@ -610,7 +610,7 @@ class _FileBrowserScreenState extends ConsumerState<FileBrowserScreen> {
 
   Future<void> _pickAndUploadPhoto() async {
     try {
-      final result = await FilePicker.platform.pickFiles(
+      final result = await FilePicker.pickFiles(
         type: FileType.media,
         allowMultiple: true,
       );

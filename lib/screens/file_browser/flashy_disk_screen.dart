@@ -714,7 +714,7 @@ class _FlashyDiskScreenState extends ConsumerState<FlashyDiskScreen> {
 
   Future<void> _pickAndUploadFiles() async {
     try {
-      final result = await FilePicker.platform.pickFiles(allowMultiple: true);
+      final result = await FilePicker.pickFiles(allowMultiple: true);
       if (result == null || result.files.isEmpty || !mounted) return;
 
       int uploaded = 0;
@@ -741,7 +741,7 @@ class _FlashyDiskScreenState extends ConsumerState<FlashyDiskScreen> {
 
   Future<void> _pickAndUploadPhoto() async {
     try {
-      final result = await FilePicker.platform.pickFiles(
+      final result = await FilePicker.pickFiles(
         type: FileType.media,
         allowMultiple: true,
       );
