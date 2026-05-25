@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "358745552808",
+    "project_id": "flashy-647b2",
+    "storage_bucket": "flashy-647b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358745552808:android:990479a55ef5650ea74f9d",
+        "android_client_info": {
+          "package_name": "com.flashy.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLiobfRppuJNWjG_mlU6F0EdHNzqTJvMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
