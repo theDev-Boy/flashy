@@ -24,7 +24,6 @@ import '../../widgets/bottom_sheets/properties_sheet.dart';
 import '../../widgets/bottom_sheets/compress_sheet.dart';
 import '../../services/permission_service.dart';
 import '../../services/file_service.dart';
-import '../../services/drive_service.dart';
 import '../../utils/file_utils.dart';
 
 class FileBrowserScreen extends ConsumerStatefulWidget {
