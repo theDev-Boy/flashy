@@ -20,8 +20,9 @@ subprojects {
 }
 
 // Fix: Set namespace on library plugins that don't specify one (e.g. old file_picker 3.0.4)
+// Uses withPlugin instead of afterEvaluate to avoid 'already evaluated' error
 subprojects {
-    afterEvaluate {
+    pluginManager.withPlugin("com.android.library") {
         val libExt = project.extensions.findByType(com.android.build.api.dsl.LibraryExtension::class.java)
         if (libExt != null && libExt.namespace == null) {
             libExt.namespace = (project.group as? String) ?: "com.${project.name}"
